@@ -18,9 +18,9 @@ import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
-import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
+import { IoLogoGithub } from 'react-icons/io5'
 import thumbYouTube from '../public/images/links/youtube.png'
-import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
+
 
 const Home = () => (
   <Layout>
@@ -32,7 +32,7 @@ const Home = () => (
         textAlign="center"
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
       >
-        Hello, I&apos;m a full-stack developer based in Japan!
+        Hello, I&apos;m a full-time student based in Cavite!
       </Box>
 
       <Box display={{ md: 'flex' }}>
@@ -40,7 +40,7 @@ const Home = () => (
           <Heading as="h2" variant="page-title">
             Leif Gio Villanueva
           </Heading>
-          <p>Future Educator ( Programmer / Student / Researcher )</p>
+          <p>Future Educator ( Programmer / Student )</p>
         </Box>
         <Box
           flexShrink={0}
@@ -63,7 +63,7 @@ const Home = () => (
 
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">
-          Work
+          About
         </Heading>
         <Paragraph>
 		Leif is a dedicated student raised in Imus with a passion for teaching
@@ -85,20 +85,20 @@ const Home = () => (
           Bio
         </Heading>
         <BioSection>
-          <BioYear>2000</BioYear>
-          Born in Cavite, Philippines.
-        </BioSection>
-        <BioSection>
-          <BioYear>2017</BioYear>
-		Completed Junior High School in the Imus Institute of Science and Technology
+          <BioYear>2019 to present</BioYear>
+		Studying at Technological University of the Philippines - Cavite Campus
         </BioSection>
         <BioSection>
           <BioYear>2019</BioYear>
 		Completed Senior High School (STEM) in the Emilio Aguinaldo College - Cavite Campus
         </BioSection>
         <BioSection>
-          <BioYear>2019 to present</BioYear>
-		Studying at Technological University of the Philippines - Cavite Campus
+          <BioYear>2017</BioYear>
+		Completed Junior High School in the Imus Institute of Science and Technology
+        </BioSection>
+        <BioSection>
+	  <BioYear>2000</BioYear>
+          Born in Cavite, Philippines.
         </BioSection>
       </Section>
 
@@ -107,15 +107,7 @@ const Home = () => (
           I ♥
         </Heading>
         <Paragraph>
-          Art, Music,{' '}
-          <Link href="https://illust.odoruinu.net/" target="_blank">
-            Drawing
-          </Link>
-          , Playing Drums,{' '}
-          <Link href="https://500px.com/p/craftzdog" target="_blank">
-            Photography
-          </Link>
-          , Leica, Machine Learning
+          Playing Chess, Classical Music, Programming, Teaching
         </Paragraph>
       </Section>
 
@@ -125,46 +117,13 @@ const Home = () => (
         </Heading>
         <List>
           <ListItem>
-            <Link href="https://github.com/craftzdog" target="_blank">
+            <Link href="https://github.com/leifgio" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
                 leftIcon={<Icon as={IoLogoGithub} />}
               >
-                @craftzdog
-              </Button>
-            </Link>
-          </ListItem>
-          <ListItem>
-            <Link href="https://twitter.com/inkdrop_app" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-                leftIcon={<Icon as={IoLogoTwitter} />}
-              >
-                @inkdrop_app (English)
-              </Button>
-            </Link>
-          </ListItem>
-          <ListItem>
-            <Link href="https://twitter.com/craftzdog" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-                leftIcon={<Icon as={IoLogoTwitter} />}
-              >
-                @craftzdog (日本語)
-              </Button>
-            </Link>
-          </ListItem>
-          <ListItem>
-            <Link href="https://instagram.com/craftzdog" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-                leftIcon={<Icon as={IoLogoInstagram} />}
-              >
-                @craftzdog
+                @leifgio
               </Button>
             </Link>
           </ListItem>
@@ -172,18 +131,11 @@ const Home = () => (
 
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
           <GridItem
-            href="https://www.youtube.com/devaslife"
-            title="Dev as Life"
+            href="https://www.youtube.com/user/gIO23VlLLanuEva"
+            title="Leif Gio Villanueva"
             thumbnail={thumbYouTube}
           >
             My YouTube channel
-          </GridItem>
-          <GridItem
-            href="https://www.inkdrop.app/"
-            title="Inkdrop"
-            thumbnail={thumbInkdrop}
-          >
-            A Markdown note-taking app
           </GridItem>
         </SimpleGrid>
 

@@ -12,10 +12,10 @@ import { Title, WorkImage, Meta } from '../../components/work'
 import P from '../../components/paragraph'
 
 const Work = () => (
-  <Layout title="mode.tokyo">
+  <Layout title="Video Role Play">
     <Container>
       <Title>
-        mode.tokyo <Badge>2016</Badge>
+        Video Role Play <Badge>2021</Badge>
       </Title>
       <P>The mode magazine for understanding to personally enjoy Japan.</P>
       <P>

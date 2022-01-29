@@ -22,37 +22,43 @@ const Works = () => (
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section>
-          <WorkGridItem id="inkdrop" title="Inkdrop" thumbnail={thumbInkdrop}>
-            A Markdown note-taking app with 100+ plugins, cross-platform and
+          <WorkGridItem
+		id="personal-infographics"
+		title="Personal Infographics"
+		thumbnail={thumbInkdrop}>
+            Showcasing attributes, skills and intelligence. This also includes on how to nurture the self.
             encrypted data sync support
           </WorkGridItem>
         </Section>
         <Section>
           <WorkGridItem
-            id="walknote"
-            title="walknote"
+            id="gifted-infographics"
+            title="Celebrity Infographics"
             thumbnail={thumbWalknote}
           >
-            Music recommendation app for iOS
+		Presents the achievements of a famous person with disability.
           </WorkGridItem>
         </Section>
 
         <Section delay={0.1}>
           <WorkGridItem
-            id="fourpainters"
-            title="The four painters"
+		id="perspective"
+		thumbnail={thumbMenkiki}
+		title="Perspective Essay">
+            Components of Special and Inclusive Education.
+          </WorkGridItem>
+        </Section>
+
+        <Section delay={0.1}>
+          <WorkGridItem
+            id="reflection"
+            title="Important Terminologies"
             thumbnail={thumbFourPainters}
           >
-            A video work generated with deep learning, imitating famous four
-            painters like Van Gogh
+            Common Concpets on Special and Inclusive Education
           </WorkGridItem>
         </Section>
-        <Section delay={0.1}>
-          <WorkGridItem id="menkiki" thumbnail={thumbMenkiki} title="Menkiki">
-            An app that suggests ramen(noodle) shops based on a given photo of
-            the ramen you want to eat
-          </WorkGridItem>
-        </Section>
+
       </SimpleGrid>
 
       <Section delay={0.2}>
@@ -66,50 +72,50 @@ const Works = () => (
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section delay={0.3}>
           <WorkGridItem
-            id="modetokyo"
-            thumbnail={thumbModeTokyo}
-            title="mode.tokyo"
-          >
-            The mode magazine for understanding to personally enjoy Japan
+		id="report"
+		thumbnail={thumbStyly}
+		title="Group Report">
+            Encouraging Teachers to Practice Inclusive Education in other Marginalized Groups
           </WorkGridItem>
         </Section>
         <Section delay={0.3}>
-          <WorkGridItem id="styly" thumbnail={thumbStyly} title="Styly">
-            A VR Creative tools for fashion brands
-          </WorkGridItem>
-        </Section>
-      </SimpleGrid>
-
-      <Section delay={0.4}>
-        <Divider my={6} />
-
-        <Heading as="h3" fontSize={20} mb={4}>
-          Old works
-        </Heading>
-      </Section>
-
-      <SimpleGrid columns={[1, 1, 2]} gap={6}>
-        <Section delay={0.5}>
-          <WorkGridItem id="pichu2" thumbnail={thumbPichu2} title="Pichu*Pichu">
-            Twitter client app for iPhone Safari
-          </WorkGridItem>
-        </Section>
-        <Section delay={0.5}>
           <WorkGridItem
-            id="freedbtagger"
-            thumbnail={thumbFreeDBTagger}
-            title="freeDBTagger"
+            id="video-role-play"
+            thumbnail={thumbModeTokyo}
+            title="Video Role Play"
           >
-            Automatic audio file tagging tool using FreeDB for Windows
+            Physical Disabilities and other Health Impairment
           </WorkGridItem>
         </Section>
-        <Section delay={0.6}>
-          <WorkGridItem id="amembo" thumbnail={thumbAmembo} title="Amembo">
-            P2P private file sharing tool with MSN Messenger integration for
-            Windows
+        <Section delay={0.3}>
+          <WorkGridItem
+		id="video-reflection"
+		thumbnail={thumbStyly}
+		title="Video Reflection">
+            Learning disabilities
           </WorkGridItem>
         </Section>
+
+        <Section delay={0.3}>
+          <WorkGridItem
+		id="mindmap"
+		thumbnail={thumbStyly}
+		title="Mindmap">
+            Common Concepts on Special and Inclusive Education
+          </WorkGridItem>
+        </Section>
+
+	        <Section delay={0.3}>
+          <WorkGridItem
+		id="slogan"
+		thumbnail={thumbStyly}
+		title="Slogan">
+            Making Schools Inclusive - Creating Inclusive Cultures Producing Inclusive Policies
+          </WorkGridItem>
+        </Section>
+
       </SimpleGrid>
+
     </Container>
   </Layout>
 )
