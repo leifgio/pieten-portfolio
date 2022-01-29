@@ -4,7 +4,9 @@ import {
   Box,
   Image,
   SimpleGrid,
-  useColorModeValue
+  useColorModeValue,
+  Badge,
+  Divider
 } from '@chakra-ui/react'
 import Paragraph from '../components/paragraph'
 import Layout from '../components/layouts/article'
@@ -73,63 +75,71 @@ const Home = () => (
         </Paragraph>
       </Section>
 
+      <Divider my={6} />
+
       <Section delay={0.2}>
         <Heading as="h3" variant="section-title">
           Solo Works
         </Heading>
 
-        <SimpleGrid columns={[1, 2, 2]} gap={6}>
+        <SimpleGrid columns={[1, 1, 2]} gap={6}>
 	        <Section>
           <GridItem
 		href="https://drive.google.com/file/d/1nzyqVLz8MeFYISQxDK6y-z3DwcOR6X1e/view?usp=sharing"
 		title="Personal Infographics"
 		thumbnail={thumbPersonal}>
             Showcasing attributes, skills and intelligence. This also includes on how to nurture the self.
+	<br/><Badge>jan 24</Badge>
           </GridItem>
         </Section>
+
         <Section>
           <GridItem
             href="https://drive.google.com/file/d/1y7MNJbh_in9-R59UyUyLLYkAu3uNpdUM/view?usp=sharing"
             title="Celebrity Infographics"
             thumbnail={thumbCelebrity}>
 		Presents the achievements of a famous person with disability.
+		<br/><Badge>jan 21</Badge>
           </GridItem>
         </Section>
 
-        <Section delay={0.1}>
+        <Section delay={0.2}>
+          <GridItem
+            href="https://docs.google.com/document/d/1_XJHj5FQUtqInicKybr4XI2PrsPU4I9cB5Aah7Amhe8/edit?usp=sharing"
+            title="Item Pool"
+            thumbnail={thumbItempool}>
+		
+            Sample test items collected for midterm examinations
+            <br/><Badge>21 dec 07</Badge>
+          </GridItem>
+        </Section>
+
+        <Section delay={0.2}>
           <GridItem
 		href="https://drive.google.com/file/d/10rnBVI72pvIuvDHCM1RDoeRGmHnxxW5M/view?usp=sharing"
 		thumbnail={thumbPerspective}
 		title="Perspective Essay">
             Components of Special and Inclusive Education.
+            <br/><Badge>21 nov 10</Badge>
           </GridItem>
         </Section>
 
-        <Section delay={0.1}>
+        <Section delay={0.2}>
           <GridItem
             href="https://docs.google.com/document/d/1wQGsnQ3DMo_rpCJh2_SVPAJcDpgdcNPfE0ebEd9qd7g/edit?usp=sharing"
             title="Important Terminologies"
-            thumbnail={thumbTerminologies}
-          >
+            thumbnail={thumbTerminologies}>
             Common Concpets on Special and Inclusive Education
+            <br/><Badge>21 sep 29</Badge>
           </GridItem>
         </Section>
-
-        <Section delay={0.1}>
-          <GridItem
-            href="https://docs.google.com/document/d/1_XJHj5FQUtqInicKybr4XI2PrsPU4I9cB5Aah7Amhe8/edit?usp=sharing"
-            title="Item Pool"
-            thumbnail={thumbItempool}
-          >
-            Common Concpets on Special and Inclusive Education
-          </GridItem>
-        </Section>
-
         </SimpleGrid>
 
       </Section>
 
       <Section delay={0.3}>
+
+      <Divider my={6} />
 
         <Heading as="h3" variant="section-title">
           Collaborations
@@ -143,23 +153,33 @@ const Home = () => (
 		thumbnail={thumbGroup}
 		title="Group Report">
             Encouraging Teachers to Practice Inclusive Education in other Marginalized Groups
+            <br/><Badge>Collaborators</Badge>
+            <br/>Vasquez, Verino, Verula
+            <br/><Badge>jan 28</Badge>
           </GridItem>
         </Section>
-        <Section delay={0.3}>
-          <GridItem
-            href="https://youtu.be/KDEY5dGkUrk"
-            thumbnail={thumbRoleplay}
-            title="Video Role Play"
-          >
-            Physical Disabilities and other Health Impairment
-          </GridItem>
-        </Section>
+
         <Section delay={0.3}>
           <GridItem
 		href="https://youtu.be/Uk9KlsVwRFU"
 		thumbnail={thumbReflection}
 		title="Video Reflection">
-            Learning disabilities
+            Appreciating learning disabilities - Reflection to a short film
+            <br/><Badge>Collaborators</Badge>
+            <br/>Vasquez, Verino, Verula
+            <br/><Badge>21 dec 02</Badge>
+          </GridItem>
+        </Section>
+
+        <Section delay={0.3}>
+          <GridItem
+            href="https://youtu.be/KDEY5dGkUrk"
+            thumbnail={thumbRoleplay}
+            title="Video Role Play">
+            Physical Disabilities and other Health Impairment
+            <br/><Badge>Collaborators</Badge>
+            <br/>Marasigan, Marquez, Mundala, Parado, Parohinog, Ursal
+            <br/><Badge>21 nov 21</Badge>
           </GridItem>
         </Section>
 
@@ -169,6 +189,9 @@ const Home = () => (
 		thumbnail={thumbMindmap}
 		title="Mindmap">
             Common Concepts on Special and Inclusive Education
+            <br/><Badge>Collaborators</Badge>
+            <br/>Sojon, Tactay, Ursal, Vasquez, Verino, Verula
+            <br/><Badge>21 oct 07</Badge>
           </GridItem>
         </Section>
 
@@ -178,6 +201,9 @@ const Home = () => (
 		thumbnail={thumbSlogan}
 		title="Slogan">
             Making Schools Inclusive - Creating Inclusive Cultures Producing Inclusive Policies
+            <br/><Badge>Collaborators</Badge>
+            <br/>Vasquez, Verino, Verula
+            <br/><Badge>21 oct 29</Badge>
           </GridItem>
         </Section>
 
