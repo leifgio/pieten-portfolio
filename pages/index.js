@@ -19,8 +19,17 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
 import { IoLogoGithub } from 'react-icons/io5'
-import thumbYouTube from '../public/images/links/youtube.png'
 
+import thumbPersonal from '../public/images/works/personal.png'
+import thumbCelebrity from '../public/images/works/gift.png'
+import thumbPerspective from '../public/images/works/perspective.png'
+import thumbTerminologies from '../public/images/works/terminologies.png'
+import thumbGroup from '../public/images/works/group.png'
+import thumbMindmap from '../public/images/works/mindmap.png'
+import thumbReflection from '../public/images/works/reflection.png'
+import thumbRoleplay from '../public/images/works/roleplay.png'
+import thumbSlogan from '../public/images/works/slogan.png'
+import thumbItempool from '../public/images/works/itempool.png'
 
 const Home = () => (
   <Layout>
@@ -71,82 +80,117 @@ const Home = () => (
 		and organizing all the procedure that reflects the desired attitude for
 		educators. Currently he is studying for a college degree in education.
         </Paragraph>
-        <Box align="center" my={4}>
-          <NextLink href="/works">
-            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-              My portfolio
-            </Button>
-          </NextLink>
-        </Box>
       </Section>
 
       <Section delay={0.2}>
         <Heading as="h3" variant="section-title">
-          Bio
+          Solo Works
         </Heading>
-        <BioSection>
-          <BioYear>2019 to present</BioYear>
-		Studying at Technological University of the Philippines - Cavite Campus
-        </BioSection>
-        <BioSection>
-          <BioYear>2019</BioYear>
-		Completed Senior High School (STEM) in the Emilio Aguinaldo College - Cavite Campus
-        </BioSection>
-        <BioSection>
-          <BioYear>2017</BioYear>
-		Completed Junior High School in the Imus Institute of Science and Technology
-        </BioSection>
-        <BioSection>
-	  <BioYear>2000</BioYear>
-          Born in Cavite, Philippines.
-        </BioSection>
-      </Section>
-
-      <Section delay={0.3}>
-        <Heading as="h3" variant="section-title">
-          I ♥
-        </Heading>
-        <Paragraph>
-          Playing Chess, Classical Music, Programming, Teaching
-        </Paragraph>
-      </Section>
-
-      <Section delay={0.3}>
-        <Heading as="h3" variant="section-title">
-          On the web
-        </Heading>
-        <List>
-          <ListItem>
-            <Link href="https://github.com/leifgio" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-                leftIcon={<Icon as={IoLogoGithub} />}
-              >
-                @leifgio
-              </Button>
-            </Link>
-          </ListItem>
-        </List>
 
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
+	        <Section>
           <GridItem
-            href="https://www.youtube.com/user/gIO23VlLLanuEva"
-            title="Leif Gio Villanueva"
-            thumbnail={thumbYouTube}
-          >
-            My YouTube channel
+		href="https://drive.google.com/file/d/1nzyqVLz8MeFYISQxDK6y-z3DwcOR6X1e/view?usp=sharing"
+		title="Personal Infographics"
+		thumbnail={thumbPersonal}>
+            Showcasing attributes, skills and intelligence. This also includes on how to nurture the self.
           </GridItem>
+        </Section>
+        <Section>
+          <GridItem
+            href="https://drive.google.com/file/d/1y7MNJbh_in9-R59UyUyLLYkAu3uNpdUM/view?usp=sharing"
+            title="Celebrity Infographics"
+            thumbnail={thumbCelebrity}>
+		Presents the achievements of a famous person with disability.
+          </GridItem>
+        </Section>
+
+        <Section delay={0.1}>
+          <GridItem
+		href="https://drive.google.com/file/d/10rnBVI72pvIuvDHCM1RDoeRGmHnxxW5M/view?usp=sharing"
+		thumbnail={thumbPerspective}
+		title="Perspective Essay">
+            Components of Special and Inclusive Education.
+          </GridItem>
+        </Section>
+
+        <Section delay={0.1}>
+          <GridItem
+            href="https://docs.google.com/document/d/1wQGsnQ3DMo_rpCJh2_SVPAJcDpgdcNPfE0ebEd9qd7g/edit?usp=sharing"
+            title="Important Terminologies"
+            thumbnail={thumbTerminologies}
+          >
+            Common Concpets on Special and Inclusive Education
+          </GridItem>
+        </Section>
+
+        <Section delay={0.1}>
+          <GridItem
+            href="https://docs.google.com/document/d/1_XJHj5FQUtqInicKybr4XI2PrsPU4I9cB5Aah7Amhe8/edit?usp=sharing"
+            title="Item Pool"
+            thumbnail={thumbItempool}
+          >
+            Common Concpets on Special and Inclusive Education
+          </GridItem>
+        </Section>
+
         </SimpleGrid>
 
-        <Box align="center" my={4}>
-          <NextLink href="/posts">
-            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-              Popular posts
-            </Button>
-          </NextLink>
-        </Box>
       </Section>
+
+      <Section delay={0.3}>
+
+        <Heading as="h3" variant="section-title">
+          Collaborations
+        </Heading>
+      </Section>
+
+      <SimpleGrid columns={[1, 1, 2]} gap={6}>
+        <Section delay={0.3}>
+          <GridItem
+		href="https://youtu.be/ZMxkrxV-BpU"
+		thumbnail={thumbGroup}
+		title="Group Report">
+            Encouraging Teachers to Practice Inclusive Education in other Marginalized Groups
+          </GridItem>
+        </Section>
+        <Section delay={0.3}>
+          <GridItem
+            href="https://youtu.be/KDEY5dGkUrk"
+            thumbnail={thumbRoleplay}
+            title="Video Role Play"
+          >
+            Physical Disabilities and other Health Impairment
+          </GridItem>
+        </Section>
+        <Section delay={0.3}>
+          <GridItem
+		href="https://youtu.be/Uk9KlsVwRFU"
+		thumbnail={thumbReflection}
+		title="Video Reflection">
+            Learning disabilities
+          </GridItem>
+        </Section>
+
+        <Section delay={0.3}>
+          <GridItem
+		href="https://drive.google.com/file/d/1TCWHYdyKmTwe4wQNQZgVOS7hW4Oh3tkh/view?usp=sharing"
+		thumbnail={thumbMindmap}
+		title="Mindmap">
+            Common Concepts on Special and Inclusive Education
+          </GridItem>
+        </Section>
+
+	        <Section delay={0.3}>
+          <GridItem
+		href="https://drive.google.com/file/d/1TtJk0lCrxBPCKPEBFfzYjBDtrGJ4Ffkv/view?usp=sharing"
+		thumbnail={thumbSlogan}
+		title="Slogan">
+            Making Schools Inclusive - Creating Inclusive Cultures Producing Inclusive Policies
+          </GridItem>
+        </Section>
+
+      </SimpleGrid>
     </Container>
   </Layout>
 )
