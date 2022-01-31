@@ -24,6 +24,7 @@ import thumbRoleplay from '../public/images/works/roleplay.png'
 import thumbSlogan from '../public/images/works/slogan.png'
 import thumbItempool from '../public/images/works/itempool.png'
 import thumbPpt from '../public/images/works/ppt.png'
+import thumbActivity from '../public/images/works/activity.png'
 
 const Home = () => (
   <Layout>
@@ -84,13 +85,24 @@ const Home = () => (
         </Heading>
 
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
-	        <Section>
+
+	<Section>
+          <GridItem
+		href="https://drive.google.com/drive/u/0/folders/1l3p3nIhS2cDJhPd9XBpVPr3FL3Z4mQNM"
+		title="Activity"
+		thumbnail={thumbActivity}>
+            	The group assigned an activity to create a poster that address the issue of marginalized groups.
+		<br/>Photo Credits: Interino
+		<br/><Badge>jan 28</Badge>
+          </GridItem>
+        </Section>
+	<Section>
           <GridItem
 		href="https://drive.google.com/file/d/1nzyqVLz8MeFYISQxDK6y-z3DwcOR6X1e/view?usp=sharing"
 		title="Personal Infographics"
 		thumbnail={thumbPersonal}>
             Showcasing attributes, skills and intelligence. This also includes on how to nurture the self.
-	<br/><Badge>jan 24</Badge>
+		<br/><Badge>jan 24</Badge>
           </GridItem>
         </Section>
 
