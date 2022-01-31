@@ -23,6 +23,7 @@ import thumbReflection from '../public/images/works/reflection.png'
 import thumbRoleplay from '../public/images/works/roleplay.png'
 import thumbSlogan from '../public/images/works/slogan.png'
 import thumbItempool from '../public/images/works/itempool.png'
+import thumbPpt from '../public/images/works/ppt.png'
 
 const Home = () => (
   <Layout>
@@ -108,7 +109,7 @@ const Home = () => (
             href="https://docs.google.com/document/d/1_XJHj5FQUtqInicKybr4XI2PrsPU4I9cB5Aah7Amhe8/edit?usp=sharing"
             title="Item Pool"
             thumbnail={thumbItempool}>
-		
+
             Sample test items collected for midterm examinations
             <br/><Badge>21 dec 07</Badge>
           </GridItem>
@@ -147,6 +148,19 @@ const Home = () => (
       </Section>
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
+
+	<Section delay={0.3}>
+          <GridItem
+		href="https://docs.google.com/presentation/d/1plBig7WCCeE4bZkBcNvA-prdWKc7PUXSTagIhHGnEp4/edit?usp=sharing"
+		thumbnail={thumbPpt}
+		title="Slide Presentation">
+            Content of the topic that is presented
+            <br/><Badge>Collaborators</Badge>
+            <br/>Vasquez, Verino, Verula
+            <br/><Badge>jan 28</Badge>
+          </GridItem>
+        </Section>
+
         <Section delay={0.3}>
           <GridItem
 		href="https://youtu.be/ZMxkrxV-BpU"
